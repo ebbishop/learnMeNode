@@ -4,7 +4,7 @@ var mod = require('./06module.js')
 var myPath = process.argv[2];
 var ext = process.argv[3];
 
-mod.filteredList(myPath, ext, function(err, arr){
+mod(myPath, ext, function(err, arr){
 	if(err){throw err;}
 	for(var i = 0; i < arr.length; i++){
 		console.log(arr[i]);
